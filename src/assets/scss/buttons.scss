@@ -1,0 +1,51 @@
+
+.btn{ 
+    color:#FFF;
+    background: #c75f03 ;
+    padding: 10px 20px;
+    border-radius: 4px ;
+    font-weight: 600;
+    display: block;
+    position: relative;
+  }
+  
+  .btn.book{
+  
+      padding-right: 50px;
+  }
+  
+  .btn.book.about{
+  
+      position: absolute;
+      right: -20px;
+      bottom: 35px;
+  }
+  .btn.scale{
+    padding-right: 45px;
+  }
+  .btn.scale::after{
+    content: " ";
+      background: url(/img/icons/scale.svg);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-size: cover;
+      right: 13px;
+      bottom: 10px;
+  
+  
+  }
+  .btn.book::after{
+      content: " ";
+      background: url(/img/icons/schedule.svg);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-size: cover;
+      right: 13px;
+      bottom: 10px;
+  }
+  .btn:hover{
+    background: #FF8519;
+    transition: all 0.8s ease-out;
+  }

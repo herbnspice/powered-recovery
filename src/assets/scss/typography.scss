@@ -1,0 +1,62 @@
+/* TYPOGRAPHY  */
+h2{
+    font-weight:900;
+    color:#232323;
+    font-size: 10rem;
+    display: block;
+    position: relative;
+    left: -35%;
+    text-transform: uppercase;
+  }
+  h2.light{
+      color:#f4f4f4;
+  }
+  h2.light::before{
+      color: #232323;
+  }
+  
+  h2.light-secondary{
+      color:#D37B2D;
+  }
+  h2.light-secondary::before{
+      color: #f4f4f4;
+  }
+  
+  h2.light-tertiary{
+      color: #ffff;
+  } 
+  h2.light-tertiary::before{
+      color: #000;
+  }
+
+  h2::before{
+    content: attr(alt);
+    width: 200%;
+    position: absolute;
+    top:105px;
+    left: 35%;
+    font-size: 1.5rem;
+    color: #d2d2d2;
+    font-weight: 400;
+  }
+  h2::after{
+    content: "";
+    width: 200%;
+    position: absolute;
+    top:140px;
+    left: 35%;
+    border-bottom: 1px solid #FF8519
+  }
+  
+  .sub-title{
+      font-weight: 900;
+      font-size: 2em;
+      width: 50%;
+      line-height: 57px;
+      margin: -88px 0px 20px 0px;
+      position: relative;
+  }
+ 
+  .sub-text {
+    margin-top: 70px;
+  }
