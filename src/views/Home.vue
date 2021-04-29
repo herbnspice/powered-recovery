@@ -7,6 +7,7 @@
           <FitnessSection />
           <ReviewSection />
           <BMISecton />
+          <CalendarSection />
         </main>
         <Footer/>
   </div>
@@ -14,14 +15,12 @@
 <script>
 import Header from  '../components/Header.vue'
 import Footer from  '../components/Footer.vue'
-
 import AboutSection from './sections/Home/about.vue'
 import ProgramSection from './sections/Home/program.vue'
 import FitnessSection from './sections/Home/fitness.vue'
 import ReviewSection from './sections/Home/reviews'
 import BMISecton from './sections/Home/bmi'
-
-
+import CalendarSection from './sections/Home/calendar'
 export default {
   components: {
     Header,
@@ -30,7 +29,8 @@ export default {
     ProgramSection,
     FitnessSection,
     ReviewSection,
-    BMISecton
+    BMISecton,
+    CalendarSection
   },
   setup() {
     
