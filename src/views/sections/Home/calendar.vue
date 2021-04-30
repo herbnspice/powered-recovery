@@ -6,8 +6,7 @@
             </h2>
             <div class="calendar-container">
                 <div class="days">
-                                        <div></div>
-
+                    <div></div>
                     <div>Monday</div>
                     <div>Tuesday</div>
                     <div>Wednesday</div>
@@ -148,7 +147,7 @@
                 </div>  
     
             </div>
-                            <button class="btn book"> Book a Schedule with us</button>
+            <button class="btn book"> Book a Schedule with us</button>
 
         </div>
     </section>
