@@ -52,7 +52,6 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
- 
     }
 
     .coach-item{
@@ -64,6 +63,12 @@
         flex: 1;
 
     }
+
+    .coach-item:hover .text-container p{
+        opacity: 0;
+        animation: opacity 0.3s ease-in-out;
+    }
+
     .coach-item .text-container p{
         bottom: 18px;
         left: 0%;
@@ -72,9 +77,12 @@
         border-radius: 5px;
         background: #fff;
         position: absolute;
-        transform: translate(50%, 50%);
+        transform: translate(42%, 50%);
+        opacity: 1;
     }
-
+    .hover-container{
+        opacity: 0;
+    }
      .coach-item .hover-container{
         top: 0;
         position: absolute;
@@ -82,12 +90,20 @@
         width: 100%;
         overflow: hidden;
         height: 100%;
-        padding: 10px;
+        padding: 40px 10px;
         display: flex;
         flex-direction: column;
         align-items: baseline;
         justify-content: flex-end;
         align-content: center;
+        opacity: 0;
+        animation: opacity 0.3s ease-in-out;
+    }
+
+     .coach-item:hover .hover-container{
+       
+        opacity: 1;
+        animation: opacity 0.3s ease-in-out;
     }
 
     .hover-container ul {
@@ -97,8 +113,9 @@
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
+        margin: 10px 0px;
     }
-      .hover-container p {
+    .hover-container p {
         color:#c75f03;
        font-weight: 900;
        text-align: center;

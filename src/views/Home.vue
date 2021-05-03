@@ -9,6 +9,9 @@
           <BMISecton />
           <CalendarSection />
           <CoachSection />
+          <GallerySection />
+          <PricingSeciton />
+          <BookSecton />
         </main>
         <Footer/>
   </div>
@@ -23,6 +26,10 @@ import ReviewSection from './sections/Home/reviews'
 import BMISecton from './sections/Home/bmi'
 import CalendarSection from './sections/Home/calendar'
 import CoachSection from './sections/Home/coach'
+import GallerySection from './sections/Home/gallery'
+import PricingSeciton from './sections/Home/pricing'
+import BookSecton from './sections/Home/book'
+
 export default {
   components: {
     Header,
@@ -33,7 +40,10 @@ export default {
     ReviewSection,
     BMISecton,
     CalendarSection,
-    CoachSection
+    CoachSection,
+    GallerySection,
+    PricingSeciton,
+    BookSecton
   },
   setup() {
     

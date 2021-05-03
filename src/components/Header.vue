@@ -58,6 +58,8 @@ header{
   height: 70vh;
   position: relative;
   display: flex;
+      max-height: 900px;
+    background-size: cover;
 }
 
 header p{
