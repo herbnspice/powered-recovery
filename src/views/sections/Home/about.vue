@@ -17,25 +17,32 @@
         </div>
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 
-.about-section{
+@import '@/assets/scss/_mixins.scss';
+
+.about-section {
   background: #000;
 }
-
-.about-section p{
+.about-section p { 
   color: #fff;
 }
-
 .about-content-container{
   display: flex;
+  flex-wrap: wrap;
 }
-
 .about-content-container img{
     margin: 10px 10px 10px 0px;
 }
 .about-content-container img{
     margin-top: -200px;
     position: relative;    
+}
+
+@include mobile{
+    .about-content-container img{
+        margin: 40px 0px;
+        width: 100%;
+    }
 }
 </style>

@@ -27,7 +27,9 @@
         </div>
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
+
 /* CAROUSEL */
 .carousel-container{
   display: flex;
@@ -109,5 +111,27 @@
   color: #fff;
   padding: 50px 0px 150px;
   margin: 0;
+}
+@include mobile{
+  .carousel-item{
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  .carousel-item-img{
+    flex: 1 1 100%;
+    margin-bottom: 40px;
+  }
+  .carousel-item-content p{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .carousel-item-content p::before{
+      top: -20px;
+    left: 20px;
+  }
+   .carousel-item-content p::after{
+    right: 20px;
+    bottom: -20px;
+  }
 }
 </style>

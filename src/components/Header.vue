@@ -22,7 +22,8 @@
         </div>
     </header>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
 
 nav{
   display: flex;
@@ -58,8 +59,6 @@ header{
   height: 70vh;
   position: relative;
   display: flex;
-      max-height: 900px;
-    background-size: cover;
 }
 
 header p{
@@ -83,9 +82,7 @@ header p strong {
   font-weight: 900;
 }
 
-
-
-@media (max-width: 980px){
+@include mobile{
   nav ul{
     display: none;
   }
@@ -94,11 +91,12 @@ header p strong {
     bottom: 105px;
     padding: 5px 10px;
     line-height: 45px;
-
+    font-size: 2.5em;
+    color: #fff;
   }
 
   header p:nth-of-type(2){
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 100;
     bottom: 30px;
     line-height: 80px;

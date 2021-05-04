@@ -78,7 +78,9 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
         </div>
     </section>
 </template>
-<style scoped>
+
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
 
 .bmi-section{
   margin:0;
@@ -189,4 +191,32 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
 .calculate-recomend-container .btn{
   margin-top: 20px;
 }
+
+@include mobile{
+  .bmi-table{
+    margin: 0px 0px 20px 0px;
+  }
+  .bmi-table .col{
+    margin: 0px;
+  }
+
+  .bmi-table .row{
+    padding: 8px;
+  }
+  .calculate-status-container{
+    flex-wrap: wrap;
+  }
+
+  .calculate-status-container img{
+    flex-basis: 100%;
+    max-width: 30px;
+  }
+  .calculate-status-container p{
+    flex-basis: 100%;
+  }
+
+  
+}
+
+
 </style>

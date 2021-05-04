@@ -30,7 +30,8 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -50,5 +51,11 @@
     font-weight: 900;
     font-size: 2rem;
     flex: 1 0 auto;
+}
+
+@include mobile{
+    .gallery li img{
+         height: auto;
+    }
 }
 </style>

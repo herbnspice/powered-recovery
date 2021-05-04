@@ -47,7 +47,9 @@
         
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
+
     .coach-container{
         display: flex;
         justify-content: space-evenly;

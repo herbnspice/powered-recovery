@@ -1,3 +1,5 @@
+@import '@/assets/scss/_mixins.scss';
+
 /* TYPOGRAPHY  */
 h2{
     font-weight:900;
@@ -63,4 +65,53 @@ h2{
 
   .text-xs{
       font-size: 0.5rem;
+  }
+
+
+  @include mobile{
+    h2 {
+        font-weight: 900;
+        color: #232323;
+        font-size: 10rem;
+        display: block;
+        position: relative;
+        left: -35%;
+        text-transform: uppercase;
+    }
+
+    h2::after {
+        content: "";
+        width: 200%;
+        position: absolute;
+        top: 76px;
+        left: 46px;
+        border-bottom: 1px solid #FF8519;
+    }
+
+    h2::before {
+        content: attr(alt);
+        width: 200%;
+        position: absolute;
+        top: 39px;
+        left: 15%;
+        font-size: 1.5rem;
+        color: #d2d2d2;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-weight: 900;
+        color: #232323;
+        font-size: 3.2rem;
+        display: block;
+        position: relative;
+        left: -9%;
+        text-transform: uppercase;
+    }
+
+    .sub-title {
+        width: 100%;
+        margin: 35px 0px 20px 0px;
+    }
+
   }

@@ -1,5 +1,5 @@
 
-
+@import '@/assets/scss/_mixins.scss';
 * {
     font-family: 'Montserrat', sans-serif;  margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@
     max-width: 1080px;
     margin: 0 auto;
     position: relative;
-   
+    width: 100%;
+    padding: 10px;
   }
 section{
     padding:50px;
@@ -18,4 +19,11 @@ section{
 }
 .break{
     flex-basis: 100%;
+}
+
+@include mobile{
+  section{
+    padding:20px;
+    margin: 0px;
+  }
 }
