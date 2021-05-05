@@ -128,4 +128,13 @@
         color:#fff;
         font-weight: 100;
     }
+
+    @include mobile{
+        .coach-container{
+            flex-wrap: wrap;
+        }
+        .coach-item{
+            flex-basis: 100%;
+        }
+    }
 </style>

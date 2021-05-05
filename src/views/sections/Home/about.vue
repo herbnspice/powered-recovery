@@ -31,12 +31,17 @@
   display: flex;
   flex-wrap: wrap;
 }
+.about-content-container p{
+    margin: 10px 10px 10px 0px;
+      flex: 1;   
+}
 .about-content-container img{
     margin: 10px 10px 10px 0px;
 }
 .about-content-container img{
     margin-top: -200px;
-    position: relative;    
+    position: relative; 
+  
 }
 
 @include mobile{

@@ -144,15 +144,253 @@
                         <p class="time"> 6:00 - 7:00</p>
                         <p class="coach"> Coach Roach</p>
                     </div>
-                </div>  
-    
+                </div>
             </div>
+            <div class="calendar-container-mobile">
+                <h3>Monday</h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+                <h3>Tuesday</h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+                 <h3>Wednesday</h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+                 <h3>Thursday</h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+                 <h3>Friday</h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+                 <h3>Saturday</h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+                 <h3>Sunday </h3>
+                <ul>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule">
+                            <span class="type"> Health </span>
+                            <span class="coach"> Coach Roach </span>
+                        </div>
+                        <div class="time-slot"> 
+                            <span class="time"> 2:00 </span>
+                            <span class="slot"> 2 slots </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
             <button class="btn book"> Book a Schedule with us</button>
 
         </div>
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
+
+.calendar-container-mobile{
+    display: none;
+}
 .calendar-section{
     background: #000;
     margin-bottom: 0;
@@ -215,6 +453,61 @@ p{
 .schedule .coach{
     font-weight: 700;
     text-transform: uppercase;
-    color: #a7a1a1v;
+    color: #a7a1a1;
+}
+@include mobile{
+    .calendar-container {
+        display: none;
+    }
+
+    .calendar-container-mobile{
+        display: flex;
+        margin:10px 0px;
+        flex-wrap: wrap;
+    }
+     .calendar-container-mobile h3{
+         flex-basis: 100%;
+         color:#fff;
+         text-align: center;
+         font-weight: 800;
+        margin:10px 0px;
+    }
+    .calendar-container-mobile ul{
+        display: flex;
+        color: #fff;
+        width: 100%;
+        margin-bottom: 20px;
+            flex-wrap: wrap;
+    }
+    .calendar-container-mobile ul li{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:100%;
+        border-bottom: solid #fff 1px;
+        flex-basis: 100%;
+    }
+
+    .schedule, .time-slot{
+        display: flex;
+        flex-direction: column;
+        padding: 5px; 
+        flex: 1;
+    }
+    .schedule {
+         text-align: left;
+    }
+    .time-slot {
+         text-align: right;
+    }
+    .schedule .coach, .time-slot .slot{
+        font-size: 12px;
+    }
+
+    .btn.book{
+        margin: 0 auto;
+    }
+
+
 }
 </style>

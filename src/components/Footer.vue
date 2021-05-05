@@ -19,7 +19,8 @@
         </div>
     </footer>
 </template>
-<style scoped>
+<style  lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
 
 footer{
   padding: 50px;
@@ -34,5 +35,23 @@ footer div{
   flex: 1;
   display: flex;
   align-items: center;
+}
+@include mobile{
+  footer{
+    padding: 20px;
+  }
+  footer .container{
+    flex-wrap:  wrap;
+  }
+  footer .container div{
+    flex-basis: 100%;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+   footer .container div ul{
+    width: 100%;
+  }
+
 }
 </style>

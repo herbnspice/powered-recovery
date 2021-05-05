@@ -39,7 +39,8 @@
         </div>
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_mixins.scss';
 .appointment-container{
     background: #F8F7F8;
     margin: 0;
@@ -81,5 +82,17 @@
     font-weight: bold;
     color: #bf610d;
 
+}
+
+@include mobile{
+    .book-form-container{
+        width: 100%;
+        margin-top:20px;
+    }
+    .status-container{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 </style>
