@@ -29,8 +29,14 @@ nav{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-   align-items: flex-start;
-   align-content: center;
+  align-items: flex-start;
+  align-content: center;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: 104px;
+}
+nav.animate{
+  height: 0px;
 }
 nav img{
   width: 200px;

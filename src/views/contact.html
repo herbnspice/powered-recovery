@@ -1,48 +1,59 @@
+<div class="col-md-12 col-xs-12 col-sm-12">
+    <h5 style="font-size: 12px !important;
+    color: red !important;    text-align: right !important;"> *Campos requeridos</h5>
+</div>
 <div class="form-application"> 
     <div class="col-md-12 col-xs-12 col-sm-12">
         <div class="row d-flex">
-            <div class="col-md-4 col-xs-12 col-sm-12 full-height ">
-                <div class="card-gray">
-                <div class="col-md-12 col-xs-12 col-sm-12">
-                    <h5> *Campos requeridos</h5>
-                </div>
-                <div class="col-md-12 col-xs-12 col-sm-12">
-                    <h5>1. Nombre de la/el participante :*</h5>
-                </div>
-                <div class="col-md-12 col-xs-12 col-sm-12">
-                    <label> Primer Nombre: [text* primer-nombre placeholder "Primer Nombre" ] </label>
-                </div>
-                <div class="col-md-12 col-xs-12 col-sm-12">
-                    <label> Segundo Nombre:[text segundo-nombre  placeholder "Segundo Nombre" ] </label>
-                </div>
-                </div>
+        <div class="col-md-4 col-xs-12 col-sm-12 full-height ">
+        <div class="card-gray">
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5>1. Nombre de la/el participante :*</h5>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <label> Primer Nombre: [text* primer-nombre placeholder "Primer Nombre" ] </label>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <label> Segundo Nombre:[text segundo-nombre  placeholder "Segundo Nombre" ] </label>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-12 full-height">
+        <div class="card-gray">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <h5>2. Apellidos*</h5>
             </div>
-            <div class="col-md-4 col-xs-12 col-sm-12 full-height">
-                <div class="card-gray">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5>2. Apellidos*</h5>
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <label> Primer Apellido: [text* primer-apelido placeholder "Primer Apellido"] </label>
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <label> Segundo Apellido :[text* segundo-apelido placeholder "Segundo Apellido"] </label>
-                    </div>
-                </div>
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <label> Primer Apellido: [text* primer-apelido placeholder "Primer Apellido"] </label>
             </div>
-            <div class="col-md-4 col-xs-12 col-sm-12 full-height">
-                <div class="card-gray"> 
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5>3. Género* </h5>
-                        [checkbox* genero-del-talento id:genero-del-talento  
-                        "Femenino"
-                        "Masculino"]
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <label> Segundo Apellido :[text* segundo-apelido placeholder "Segundo Apellido"] </label>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-12 full-height">
+        <div class="card-gray"> 
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <h5>3. Género* </h5>
+                [radio genero-del-talento id:genero-del-talento  
+                "Femenino"
+                "Masculino"]
 
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5>4. Fecha de nacimiento * </h5>
-                        [date* fecha-de-nacimento ]
-                    </div>
+            </div>
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <h5>4. Fecha de nacimiento * </h5>
+                [date* fecha-de-nacimento ]
+            </div>
+            
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-xs-12 col-sm-12 margin-top">
+        <div class="row d-flex">
+        <div class="col-md-6 col-xs-12 col-sm-12 full-height">
+            <div class="card-white">
+                <div class="row">
                     <div class="col-md-12 col-xs-12 col-sm-12">
                         <h5>5. Edad * </h5>
                         [select* edad-del-talento
@@ -51,226 +62,427 @@
                             "61" "62" "63" "64" "65" "66" "67" "68" "69" "70" "71" "72" "73" "74" "75" "76" "77" "78" "79" "80" "81" "82" "83" "84" "85" "86" "87" "88" "89" "90"
                             "91" "92" "93" "94" "95" "96" "97" "98" "99"] 
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12 col-xs-12 col-sm-12 margin-top">
-        <div class="row d-flex">
-            <div class="col-md-6 col-xs-12 col-sm-12 full-height">
-                <div class="card-white">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-sm-12">
-                            <h5>6.  El/la participante ha tomado cursos, clases o talleres previos de* </h5> 
-                            [checkbox* habilidades-destacadas-del-talento id:habilidades-destacadas-del-talento multiple 
-                                    "Actuación "
-                                    "Canto "
-                                    "Danza "
-                                    "Modelaje "
-                                    "Canto"
-                                    "Oratoria "
-                                    "Otro"]
-                            <label class="habilidades-especifique hide"> Otro  [text habilidad-especifique  placeholder "Especifique"]</label> 
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xs-12 col-sm-12 full-height ">
-                <div class="card-white">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-md-12 col-xs-12 col-sm-12">
-                                    <h5>7. ¿El/la participante cuenta con experiencia como actor/actriz en la industria de los medios de comunicación?*  </h5>
-                                        [radio experiencia-modelo id:experiencia-modelo default:1 "No" "Si"]
-                                    <label class="experiencia-especifique hide"> Cuál [text Cual-especifique  id:cual-experiencia-modelo placeholder "Especifique" ]</label> 
-                                </div>
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <h5>6.  El/la participante ha tomado cursos, clases o talleres previos de* </h5> 
+                        [checkbox* habilidades-destacadas-del-talento id:habilidades-destacadas-del-talento multiple 
+                                "Actuación "
+                                "Canto "
+                                "Danza "
+                                "Modelaje "
+                                "Canto"
+                                "Oratoria "
+                                "Otro"]
+                        <label class="habilidades-especifique hide"> Otro  [text habilidad-especifique  placeholder "Especifique"]</label> 
+                    </div> 
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <h5>7. ¿El/la participante cuenta con experiencia como actor/actriz en la industria de los medios de comunicación?*  </h5>
+                                    [radio experiencia-modelo id:experiencia-modelo default:1 "No" "Si"]
+                                <label class="experiencia-especifique hide"> Cuál [text Cual-especifique  id:cual-experiencia-modelo placeholder "Especifique" ]</label> 
                             </div>
                         </div>
-                        <div class="col-md-12 col-xs-12 col-sm-12">
-                            <h5>8. ¿Cuál de las siguientes opciones describe mejor la ocupación actual del talento?* </h5>
-                            [select* ocupacion id:ocupacion-talento
-                                "Estudiante"
-                                "Actuación"
-                                "Modelaje"
-                                "Cantante"
-                                "Músico"
-                                "Conferencista"
-                                "Deportista Profesional"
-                                "Blogger / Influenciador"
-                                "Actividad en los medios de comunicación en general"
-                                "Comediante"
-                                "Servicio social y comunidad"
-                                "Administrativa"
-                                "Publicidad/Mercadotecnia"
-                                "Analista"
-                                "Creatividad/Arte/Diseño "
-                                "Consultoría"
-                                "Servicio al cliente"
-                                "Distribución"
-                                "Asistencia médica"
-                                "Educación"
-                                "Ingeniería"
-                                "Finanzas"
-                                "Negocios generales"
-                                "Recursos Humanos"
-                                "Tecnología de la información"
-                                "Legal"
-                                "Producción"
-                                "Relaciones Públicas"
-                                "Control de calidad"
-                                "Investigación"
-                                "Ventas"
-                                "Ciencia"
-                                "Estrategia/Planificación"
-                                "Cadena de suministro"
-                                "Capacitación"
-                                "No estoy trabajando actualmente"
-                                "Otro"]
-                            <label class="occupacion-especifique hide"> Otro  [text occupacion-especifique id:occupacion-especifique placeholder "Especifique" ] </label> 
-                        </div>
                     </div>
                 </div>
+                
             </div>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-12 full-height ">
+        <div class="card-white">
+            <div class="row">
+               
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <h5>8. ¿Cuál de las siguientes opciones describe mejor la ocupación actual del talento?* </h5>
+                    [select* ocupacion id:ocupacion-talento multiple
+                        "Actuación"
+                        "Modelaje"
+                        "Cantante"
+                        "Músico"
+                        "Conferencista"
+                        "Deportista Profesional"
+                        "Estudiante"
+                        "Blogger / Influenciador"
+                        "Actividad en los medios de comunicación en general"
+                        "Comediante"
+                        "Servicio social y comunidad"
+                        "Administrativa"
+                        "Publicidad/Mercadotecnia"
+                        "Analista"
+                        "Creatividad/Arte/Diseño "
+                        "Consultoría"
+                        "Servicio al cliente"
+                        "Distribución"
+                        "Asistencia médica"
+                        "Educación"
+                        "Ingeniería"
+                        "Finanzas"
+                        "Negocios generales"
+                        "Recursos Humanos"
+                        "Tecnología de la información"
+                        "Legal"
+                        "Producción"
+                        "Relaciones Públicas"
+                        "Control de calidad"
+                        "Investigación"
+                        "Ventas"
+                        "Ciencia"
+                        "Estrategia/Planificación"
+                        "Cadena de suministro"
+                        "Capacitación"
+                        "No estoy trabajando actualmente"
+                        "Otro"]
+                    <label class="occupacion-especifique hide"> Otro  [text occupacion-especifique id:occupacion-especifique placeholder "Especifique" ] </label> 
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
     <div class="col-md-12 col-xs-12 col-sm-12 margin-top">
-        <div class="row d-flex">
-            <div class="col-md-4 col-xs-12 col-sm-12 full-height ">
-                <div class="card-gray">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5>9.  ¿Por qué te interesa tomar este Workshop * </h5>
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <label> Pasatiempo 1: [text* pasatiempo-1] </label>
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <label> Pasatiempo 2: [text* pasatiempo-2] </label>
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <label> Pasatiempo 3: [text* pasatiempo-3] </label>
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5> 10 Tipo de condición con la que vive el talento* </h5>
-                        [select tipo-de-condicion id:tipo-de-condicion
-                            "Afasia (Dificultad del habla)"
-                            "Afefobia (Temor a tocar o ser tocado por otras personas)"
-                            "Agnosia"
-                            "Agrafia (Incapacidad para expresar las ideas y los pensamientos por escrito)"
-                            "Albinismo"
-                            "Amputación de alguna parte de extremidad inferior"
-                            "Amputación de alguna parte de extremidad superior"
-                            "Anartria (Dificultad fuerte para articular palabras)"
-                            "Apoplejía"
-                            "Ataques epilépticos"
-                            "Ataxia"
-                            "Atetosis"
-                            "Atrofia"
-                            "Ausencia de extremidades(es) inferiores(es)"
-                            "Ausencia de extremidades(es) superiores(es)"
-                            "Autismo"
-                            "Ceguera Total (Ablepsia, Amaurosis)"
-                            "Cojera"
-                            "Convulsiones"
-                            "Daño en la médula espinal"
-                            "Baja visión"
-                            "Debilidad auditiva"
-                            "Discapacidad multiple"
-                            "Discapacidad sensorial"
-                            "Elefantiasis"
-                            "Persona de talla baja"
-                            "Escoleosis"
-                            "Hendidura labial"
-                            "Hermafrodita"
-                            "Heterocromía (Ojos de distinto color)"
-                            "Hidromicrocefalia"
-                            "Labio leporino"
-                            "Labio y paladar hendido"
-                            "Microcefalia"
-                            "Monoplejía extremidad inferior"
-                            "Monoplejía extremidad superior"
-                            "Usa un aparato por oir"
-                            "No Habla"
-                            "Parálisis Cerebral"
-                            "Parálisis"
-                            "Parkinsonismo (Parálisis agitante)"
-                            "Parkinson( mal de parkinson )"
-                            "Pérdida de uno o ambos ojos"
-                            "Síndrome de Down"
-                            "Sordera total (Cofosis)"
-                            "Sordera unilateral"
-                            "Trastornos de la personalidad"
-                            "Visión en blanco y negro"
-                            "No aplica "
-                            "Otro"]
-                        <label class="tipo-de-condicion-especifique hide"> Otro  [text tipo-de-condicion-especifique placeholder "Especifique" ] </label> 
-                    </div>
-                
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12 col-sm-12 full-height ">
-                <div class="card-gray">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5>11. ¿En qué país vive el talento?*  </h5>
-                                [select apoyo-especifico id:apoyo-especifico default:1  
-                                        "Usa andadera"
-                                        "Usa prótesis en el brazo"
-                                        "Usa prótesis en la mano"
-                                        "Usa prótesis en extremidad inferior"
-                                        "Usa silla de ruedas"
-                                        "Usa un aparato para oír"
-                                        "No aplica"
-                                        "Otro"]
-                        <label class="otro-apoyo-específico-especifique hide"> Otro    [text otro-apoyo-especifico-especifique placeholder "Especifique" ]  </label> 
-                        
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5> 12. Celular de contacto (a 10 dígitos)* :  </h5>
-                            [text* estatura-talento placeholder "eg: 160cm"]
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5> 13. Correo electrónico de contacto * :  </h5>
-                            [text* estatura-talento placeholder "eg: 160cm"]
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5> 14  Redes sociales del talento*  </h5>
-                        [select* color-de-ojos
-                            "Café"
-                            "Miel"
-                            "Azul"
-                            "Verde"
-                            "Gris"
-                            "Negro"
-                            "Varios colores"]
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5> 14  Nombre del tutor(a) del talento (en caso de aplicar)  </h5>
-                        [select* color-de-ojos
-                            "Café"
-                            "Miel"
-                            "Azul"
-                            "Verde"
-                            "Gris"
-                            "Negro"
-                            "Varios colores"]
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <h5>16. Apellido del tutor(a) del talento (en caso de aplicar)  </h5>
-                        [select* talla-de-vestido
-                            "Negro"
-                            "Castaño Obscuro"
-                            "Castaño Claro"
-                            "Rubio"
-                            "Pelirojo"
-                            "Canoso"
-                            "Blanco"]
-                    </div>
-                
-                </div>
-            </div>
+    <div class="row d-flex">
+    <div class="col-md-4 col-xs-12 col-sm-12 full-height ">
+    <div class="card-gray">
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5>9.  ¿Por qué te interesa tomar este Workshop * </h5>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            [radio interesa-workshop id:interesa-workshop 
+                "Quiero ser un actor / actriz profesional"
+                "Me gustaría salir en comerciales "
+                "Quiero mejorar mis habilidades de expresión "
+                "Por hobbie"
+                "Por curiosidad"
+                "No sé"]
+
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5> 10 Tipo de condición con la que vive el talento* </h5>
+            [select tipo-de-condicion id:tipo-de-condicion
+                "Afasia (Dificultad del habla)"
+                "Afefobia (Temor a tocar o ser tocado por otras personas)"
+                "Agnosia Agrafia (Incapacidad para expresar las ideas y los pensamientos por escrito)"
+                "Albinismo"
+                "Amputación de alguna parte de extremidad inferior"
+                "Amputación de alguna parte de extremidad superior"
+                "Anartria (Dificultad fuerte para articular palabras)"
+                "Apoplejía"
+                "Ataques epilépticos"
+                "Ataxia"
+                "Atetosis"
+                "Atrofia"
+                "Ausencia de extremidades(es) inferiores(es)"
+                "Ausencia de extremidades(es) superiores(es)"
+                "Autismo"
+                "Ceguera Total (Ablepsia, Amaurosis)"
+                "Cojera"
+                "Convulsiones"
+                "Daño en la médula espinal"
+                "Baja visión"
+                "Debilidad auditiva"
+                "Discapacidad multiple"
+                "Discapacidad sensorial"
+                "Elefantiasis"
+                "Persona de talla baja"
+                "Escoleosis"
+                "Hendidura labial"
+                "Hermafrodita"
+                "Heterocromía (Ojos de distinto color)"
+                "Hidromicrocefalia"
+                "Labio leporino"
+                "Labio y paladar hendido"
+                "Microcefalia"
+                "Monoplejía extremidad inferior"
+                "Monoplejía extremidad superior"
+                "Usa un aparato por oir"
+                "No Habla"
+                "Parálisis Cerebral"
+                "Parálisis"
+                "Parkinsonismo (Parálisis agitante)"
+                "Parkinson( mal de parkinson )"
+                "Pérdida de uno o ambos ojos"
+                "Síndrome de Down"
+                "Sordera total (Cofosis)"
+                "Sordera unilateral"
+                "Trastornos de la personalidad"
+                "Visión en blanco y negro"
+                "No aplica "
+                "Otro"]
+            <label class="tipo-de-condicion-especifique hide"> Otro  [text tipo-de-condicion-especifique placeholder "Especifique" ] </label> 
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5>11. ¿En qué país vive el talento?*  </h5>
+            [select* pais-vive-el-talento default:Mexico
+            "Afganistán "
+            "Albania"
+            "Alemania"
+            "Andorra"
+            "Angola"
+            "Anguilla"
+            "Antártida"
+            "Antigua y Barbuda"
+            "Antillas Holandesas"
+            "Arabia Saudí"
+            "Argentina"
+            "Armenia"
+            "Australia"
+            "Azerbaiyán"
+            "Bahamas"
+            "Bahrein"
+            "Bangladesh"
+            "Barbados"
+            "Bélgica"
+            "Belice"
+            "Benin"
+            "Bermudas"
+            "Bielorrusia"
+            "Birmania"
+            "Bolivia"
+            "Bosnia y Herzegovina"
+            "Botswana"
+            "Brasil"
+            "Brunei"
+            "Bulgaria"
+            "Burkina Faso"
+            "Burundi"
+            "Bután"
+            "Cabo Verde"
+            "Camboya"
+            "Camerún"
+            "Canadá"
+            "Chad"
+            "Chile"
+            "China"
+            "Chipre"
+            "Ciudad del Vaticano (Santa Sede)"
+            "Colombia"
+            "Comores"
+            "Congo"
+            "Congo, República Democrática del"
+            "Corea"
+            "Corea del Norte"
+            "Costa de Marfíl"
+            "Costa Rica"
+            "Croacia (Hrvatska)"
+            "Cuba"
+            "Dinamarca"
+            "Djibouti"
+            "Dominica"
+            "Ecuador"
+            "Egipto"
+            "El Salvador"
+            "Emiratos Árabes Unidos"
+            "Eritrea"
+            "Eslovenia"
+            "España"
+            "Estados Unidos"
+            "Estonia"
+            "Etiopía"
+            "Fiji"
+            "Filipinas"
+            "Finlandia"
+            "Francia"
+            "Gabón"
+            "Gambia"
+            "Georgia"
+            "Ghana"
+            "Gibraltar"
+            "Granada"
+            "Greciac"
+            "Groenlandia"
+            "Guadalupe"
+            "Guam"
+            "Guatemala"
+            "Guayana"
+            "Guayana Francesa"
+            "Guinea"
+            "Guinea Ecuatorial"
+            "Guinea-Bissau"
+            "Haití"
+            "Honduras"
+            "Hungría"
+            "India"
+            "Indonesia"
+            "Irak"
+            "Irán"
+            "Irlanda"
+            "Isla Bouvet"
+            "Isla de Christmas"
+            "Islandia"
+            "Islas Caimán"
+            "Islas Cook"
+            "Islas de Cocos o Keeling"
+            "Islas Faroe"
+            "Islas Heard y McDonald"
+            "Islas Malvinas"
+            "Islas Marianas del Norte"
+            "Islas Marshall"
+            "Islas menores de Estados Unidos"
+            "Islas Palau"
+            "Islas Salomón"
+            "Islas Svalbard y Jan Mayen"
+            "Islas Tokelau"
+            "Islas Turks y Caicos"
+            "Islas Vírgenes (EEUU)"
+            "Islas Vírgenes (Reino Unido)"
+            "Islas Wallis y Futuna"
+            "Israel"
+            "Italia"
+            "Jamaica"
+            "Japón"
+            "Jordania"
+            "Kazajistán"
+            "Kenia"
+            "Kirguizistán"
+            "Kiribati"
+            "Kuwait"
+            "Laos"
+            "Lesotho"
+            "Letonia"
+            "Líbano"
+            "Liberia"
+            "Libia"
+            "Liechtenstein"
+            "Lituania"
+            "Luxemburgo"
+            "Macedonia, Ex-República Yugoslava de"
+            "Madagascar"
+            "Malasia"
+            "Malawi"
+            "Maldivas"
+            "Malí"
+            "Malta"
+            "Marruecos"
+            "Martinica"
+            "Mauricio"
+            "Mauritania"
+            "Mayotte"
+            "México"
+            "Micronesia"
+            "Moldavia"
+            "Mónaco"
+            "Mongolia"
+            "Montserrat"
+            "Mozambique"
+            "Namibia"
+            "Nauru"
+            "Nepal"
+            "Nicaragua"
+            "Níger"
+            "Nigeria"
+            "Niue"
+            "Norfolk"
+            "Noruega"
+            "Nueva Caledonia"
+            "Nueva Zelanda"
+            "Omán"
+            "Países Bajos"
+            "Panamá"
+            "Papúa Nueva Guinea"
+            "Paquistán"
+            "Paraguay"
+            "Perú"
+            "Pitcairn"
+            "Polinesia Francesa"
+            "Polonia"
+            "Portugal"
+            "Puerto Rico"
+            "Qatar"
+            "Reino Unido"
+            "República Centroafricana"
+            "República Checa"
+            "República de Sudáfrica"
+            "República Dominicana"
+            "República Eslovaca"
+            "Reunión"
+            "Ruanda"
+            "Rumania"
+            "Rusia"
+            "Sahara Occidental"
+            "Saint Kitts y Nevis"
+            "Samoa"
+            "Samoa Americana"
+            "San Marino"
+            "San Vicente y Granadinas"
+            "Santa Helena"
+            "Santa Lucía"
+            "Santo Tomé y Príncipe"
+            "Senegal"
+            "Seychelles"
+            "Sierra Leona"
+            "Singapur"
+            "Siria"
+            "Somalia"
+            "Sri Lanka"
+            "St Pierre y Miquelon"
+            "Suazilandia"
+            "Sudán"
+            "Suecia"
+            "Suiza"
+            "Surinam"
+            "Tailandia"
+            "Taiwán"
+            "Tanzania"
+            "Tayikistán"
+            "Territorios franceses del Sur"
+            "Timor Oriental"
+            "Togo"
+            "Tonga"
+            "Trinidad y Tobago"
+            "Túnez"
+            "Turkmenistán"
+            "Turquía"
+            "Tuvalu"
+            "Ucrania"
+            "Uganda"
+            "Uruguay"
+            "Uzbekistán"
+            "Vanuatu"
+            "Venezuela"
+            "Vietnam"
+            "Yemen"
+            "Yugoslavia"
+            "Zambia"
+            "Zimbabue"]
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5> 12. Celular de contacto (a 10 dígitos)* :  </h5>
+                [number* celular-contacto placeholder]
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5> 13. Correo electrónico de contacto * :  </h5>
+                [email* correo-electronico placeholder]
         </div>
     </div>
+    </div>
+    <div class="col-md-4 col-xs-12 col-sm-12 full-height ">
+    <div class="card-gray">
+        
+        
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5> 14  Redes sociales del talento*  </h5>
+            <label>[text  id:redes-sociales-facebook placeholder "Facebook" ]  </label> 
+            <label>[text  id:redes-sociales-facebook placeholder "Twitter" ]  </label> 
+            <label>[text  id:redes-sociales-facebook placeholder "Instagram" ]  </label> 
+            <label>[text  id:redes-sociales-facebook placeholder "Web" ]  </label> 
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5> 14  Nombre del tutor(a) del talento (en caso de aplicar)  </h5>
+            <label> Primer Nombre: [text* nombre-primer placeholder "Primer Nombre" ] </label>
+            <label> Segundo Nombre: [text* nombre-segundo placeholder "Segundo Nombre" ] </label>
+
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+            <h5>16. Apellido del tutor(a) del talento (en caso de aplicar)  </h5>
+            <label> Primer Apellido: [text* apellido-primer placeholder "Primer Nombre" ] </label>
+            <label> Segundo Apellido: [text* apellido-segundo placeholder "Segundo Nombre" ] </label>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
     <div class="col-md-12 col-xs-12 col-sm-12 align-center">
-        [submit "ENVIAR"]
+    [submit "ENVIAR"]
     </div>
 </div>

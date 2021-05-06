@@ -37,37 +37,39 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
                     <h3> Calculate your BMI</h3>
                     <form action="#">
                         <div class="form-group">
-                        <input type="number" name="height" id="height" placeholder="Height/cm">
+                          <input type="number" name="height" id="height" placeholder="Height/cm" v-model="height">
                         </div>
                         <div class="form-group">
-                        <input type="number" name="weight" id="weight" placeholder="Weight/kg">
+                          <input type="number" name="weight" id="weight" placeholder="Weight/kg"  v-model="weight">
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
-                        <input type="number" name="age" id="age" placeholder="Age/kg">
+                          <input type="number" name="age" id="age" placeholder="Age/kg" v-model="age">
                         </div>
                         <div class="form-group">
-                        <select name="gender" id="gender">
+                        <select name="gender" id="gender"  v-model="gender">
                             <option value="male">Male</option>
-                            <option value="male">Female</option>
+                            <option value="female">Female</option>
                         </select>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
-                        <select name="activity" id="activity">
+                        <select name="activity" id="activity" v-model="activity">
                             <option value="male">What is your activity factor?</option>
                             <option value="male">Female</option>
+                                                        <option value="male">Female</option>
+
                         </select>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
-                        <button class="btn scale"> Calculate</button>
+                        <button class="btn scale" @click.prevent="onCalculateBMI"> Calculate</button>
                         </div>
                     </form>
                     <div class="calculate-status-container">
                     <img src="/img/icons/obese.svg" alt="results">
-                    <p> You are obese</p>
-                    <p> Your BMI is 1076.39. BMR 625 kcal/day, and   BMR w/Activity Factor 968.75 kcal/day</p>
+                    <p> You are {{weightGroup }}</p>
+                    <p> Your BMI is {{bmi}}. BMR {{bmr}} kcal/day, and   BMR w/Activity Factor 968.75 kcal/day</p>
                     </div>
                     <div class="calculate-recomend-container">
                     <p> We Recommend to take action </p>
@@ -78,7 +80,62 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
         </div>
     </section>
 </template>
+<script>
+import { ref } from 'vue' ;
+export default {
+  setup() {
+    const height = ref(null);
+    const weight = ref (null);
+    const age = ref(null);
+    const activity = ref(null);
+    const bmi  = ref(null)
+    const bmr  = ref(null)
+    const gender = ref( null )
+    const weightGroup = ref(null)
 
+    const onCalculateBMI =() => {
+        let m =  height.value / 100 
+        if( weight.value > 0 && m > 0 ){
+          bmi.value  = (weight.value / Math.pow(m,2)).toFixed(2)
+        }
+        getWeihtGroup()
+        onCalculateBMR()
+
+    }
+
+    const onCalculateBMR = () => {
+      if( gender.value == 'female'){
+        bmr.value = 655 + (9.6 *  weight.value ) + (1.8 * height.value ) - (4.7 * age.value )
+      } else {
+        bmr.value = 66 + (13.7 * weight.value ) + (5 *  height.value ) - (6.8 * age.value)
+      }
+    }
+    const getWeihtGroup = () =>{
+       if (bmi.value == 0) {
+                return "";
+            } else if (bmi.value < 15) {
+                weightGroup.value =  "Very Severely Underweight";
+            } else if (bmi.value >= 15 && bmi.value < 16) {
+                weightGroup.value = "Severely Underweight";
+            } else if (bmi.value >= 16 && bmi.value < 18.5) {
+                weightGroup.value = "Underweight";
+            } else if (bmi.value >= 18.5 && bmi.value < 25) {
+                weightGroup.value = "Healthy";
+            } else if (bmi.value >= 25 && bmi.value < 30) {
+                weightGroup.value = "Overweight";
+            } else if (bmi.value >= 30 && bmi.value < 35) {
+                weightGroup.value = "Moderately Obese";
+            } else if (bmi.value >= 35 && bmi.value < 40) {
+                weightGroup.value = "Severely Obese";
+            } else if (bmi.value > 40) {
+                weightGroup.value = "Very Severely Obese";
+            }
+    }
+
+    return { bmi, bmr,  height, weight, age, activity, gender, weightGroup, onCalculateBMI }
+  },
+}
+</script>
 <style lang="scss" scoped>
 @import '@/assets/scss/_mixins.scss';
 
