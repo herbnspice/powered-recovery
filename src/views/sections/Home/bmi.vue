@@ -48,30 +48,33 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
                         </div>
                         <div class="form-group">
                         <select name="gender" id="gender"  v-model="gender">
+                            <option value="">What is your gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
-                        <select name="activity" id="activity" v-model="activity">
-                            <option value="male">What is your activity factor?</option>
-                            <option value="male">Female</option>
-                                                        <option value="male">Female</option>
-
-                        </select>
+                          <select name="activity" id="activity" v-model="activity">
+                              <option value="">What is your activity factor?</option>
+                              <option value="1.2">Little No Exercise / Sedentary Lifestyle / Desk Job </option>
+                              <option value="1.375">Little Exercise 1 - 3 times a week </option>
+                              <option value="1.55">Moderate Exercise 6 - 7 times a week </option>
+                              <option value="1.725">Hard Exercise everday or exercising 2x/day</option>
+                              <option value="1.9">Hard exercise 2 or more times per day or training for marathon, or triathlon, etc. </option>
+                          </select>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
                         <button class="btn scale" @click.prevent="onCalculateBMI"> Calculate</button>
                         </div>
                     </form>
-                    <div class="calculate-status-container">
+                    <div class="calculate-status-container" v-if="bmi">
                     <img src="/img/icons/obese.svg" alt="results">
                     <p> You are {{weightGroup }}</p>
-                    <p> Your BMI is {{bmi}}. BMR {{bmr}} kcal/day, and   BMR w/Activity Factor 968.75 kcal/day</p>
+                    <p> Your BMI is  <span>{{bmi}} </span> . BMR <span> {{bmr}} </span> cal/day, and BMR w/Activity Factor <span> {{activityModifier}} </span> cal/day</p>
                     </div>
-                    <div class="calculate-recomend-container">
+                    <div class="calculate-recomend-container" v-if="bmi">
                     <p> We Recommend to take action </p>
                     <button class="btn book center"> Book a schedule with us</button>
                     </div>
@@ -87,11 +90,12 @@ export default {
     const height = ref(null);
     const weight = ref (null);
     const age = ref(null);
-    const activity = ref(null);
+    const activity = ref( '');
     const bmi  = ref(null)
     const bmr  = ref(null)
-    const gender = ref( null )
+    const gender = ref( '' )
     const weightGroup = ref(null)
+    const activityModifier = ref(null)
 
     const onCalculateBMI =() => {
         let m =  height.value / 100 
@@ -105,10 +109,12 @@ export default {
 
     const onCalculateBMR = () => {
       if( gender.value == 'female'){
-        bmr.value = 655 + (9.6 *  weight.value ) + (1.8 * height.value ) - (4.7 * age.value )
+        bmr.value = ( 655 + (9.6 *  weight.value ) + (1.8 * height.value ) - (4.7 * age.value ) ).toFixed(2)
       } else {
-        bmr.value = 66 + (13.7 * weight.value ) + (5 *  height.value ) - (6.8 * age.value)
+        bmr.value = ( 66 + (13.7 * weight.value ) + (5 *  height.value ) - (6.8 * age.value) ).toFixed(2)
       }
+
+        activityModifier.value  = ( activity.value * bmr.value ).toFixed(2)
     }
     const getWeihtGroup = () =>{
        if (bmi.value == 0) {
@@ -132,7 +138,7 @@ export default {
             }
     }
 
-    return { bmi, bmr,  height, weight, age, activity, gender, weightGroup, onCalculateBMI }
+    return { bmi, bmr,  height, weight, age, activity, gender, weightGroup, activityModifier,  onCalculateBMI }
   },
 }
 </script>
@@ -213,6 +219,10 @@ export default {
   align-items: center;
   box-shadow: #e8e8e8 0px 4px 9px 2px;
   
+}
+
+.calculate-status-container p span{
+  font-weight: 400;
 }
 
 .calculate-status-container img{
