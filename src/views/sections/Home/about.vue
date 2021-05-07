@@ -11,8 +11,8 @@
             who aims to provide quality care and promotion
             for sustainable healthy lifestyle.
             </p>
-            <img src="/img/about.jpg" alt="" width="50%">
-            <button class="btn book about"> Book a schedule with us </button>
+            <img src="/img/about.jpg" alt="" >
+            <BookComponent />
             </div>
         </div>
     </section>
@@ -41,6 +41,7 @@
 .about-content-container img{
     margin-top: -200px;
     position: relative; 
+    max-height: 350px;
   
 }
 
@@ -51,3 +52,14 @@
     }
 }
 </style>
+<script>
+import BookComponent from '@/components/Book.vue'
+export default {
+    components: {
+        BookComponent
+    },
+    setup() {
+        
+    },
+}
+</script>
