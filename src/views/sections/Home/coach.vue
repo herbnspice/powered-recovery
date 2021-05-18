@@ -135,6 +135,10 @@
         }
         .coach-item{
             flex-basis: 100%;
+            max-height: 420px;
+        }
+        .coach-item .text-container p{
+                left: 20%;
         }
     }
 </style>

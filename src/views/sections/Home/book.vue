@@ -75,6 +75,7 @@
 }
 .status-text-container{
     margin: 30px;
+    flex: 1;
 }
 .status-text-container h3{
     margin: 0px;

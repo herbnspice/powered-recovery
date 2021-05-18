@@ -282,6 +282,10 @@ export default {
     flex-basis: 100%;
   }
 
+  .bmi-chart-container{
+  flex:1 2 100%; 
+}
+
   
 }
 
