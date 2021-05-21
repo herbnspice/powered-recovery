@@ -23,7 +23,7 @@
                       </a>
                     </div>
                     <div class="carousel-item-content">
-                    <p> {{ review.review}} </p>
+                    <p> {{ review.review }} </p>
                     </div>
                 </div>
             </div>
@@ -220,31 +220,19 @@ export default {
   position: relative;
   z-index: 1;
   margin-bottom: 10px;
+  border: solid 3px #fff;
 }
 
-.carousel-item-img:hover a::after{
-  box-shadow: #33ff00 0px 2px 20px;
+.carousel-item-img:hover  img{
+  box-shadow: #33ff00 0px 5px 20px;
   transition: box-shadow 0.3s ease-in-out;
 }
-.carousel-item-img a::after{
-  background: linear-gradient(45deg, #f9964d, #df3969, #c52e91 );
-  content: "";
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  z-index: 0;
-  border-radius: 50%;
-  left: 50px;
-  top: -5px;
-  box-shadow: rgba(51,255,0,0) 0px 2px 20px;
-  transition: box-shadow 0.3s ease-in-out;
 
-}
 .carousel-item-img p.name{
   font-weight: bolder;
   padding: 5px;
 }
-.carousel-item-content{
+.carousel-item-content {
  flex:4;
 }
 
@@ -253,6 +241,14 @@ export default {
   text-align: left;
   position: relative;
   padding:10px;
+  max-height: 185px;
+  overflow: hidden;
+}
+
+.carousel-item-content p:hover{
+  max-height: 100%;
+  transition: max-height 0.3s ease-in-out;
+
 }
 
 .carousel-item-content p::before{
