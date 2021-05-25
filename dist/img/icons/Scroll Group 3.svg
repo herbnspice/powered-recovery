@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="1365" viewBox="0 0 400 1365">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="53" y="42" width="400" height="1365" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_3" data-name="Scroll Group 3" transform="translate(-53 -42)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Group_32" data-name="Group 32" transform="translate(-56 -33)" opacity="0.1">
+      <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(56 59)" fill="#cd680e" stroke="#707070" stroke-width="1">
+        <ellipse cx="690" cy="690.5" rx="690" ry="690.5" stroke="none"/>
+        <ellipse cx="690" cy="690.5" rx="689.5" ry="690" fill="none"/>
+      </g>
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(82 33)" stroke="#707070" stroke-width="1">
+        <circle cx="664" cy="664" r="664" stroke="none"/>
+        <circle cx="664" cy="664" r="663.5" fill="none"/>
+      </g>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="638" height="183" rx="3" transform="translate(405 680)" fill="#f9800d"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="638" height="183" rx="3" transform="translate(405 435)" fill="#f9800d"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="638" height="184" rx="4" transform="translate(405 417)" fill="#cd680e"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="638" height="183" rx="3" transform="translate(405 907)" fill="#f9800d"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="638" height="175" rx="4" transform="translate(405 889)" fill="#cd680e"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="638" height="184" rx="4" transform="translate(405 653)" fill="#cd680e"/>
+    </g>
+  </g>
+</svg>
