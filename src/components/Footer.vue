@@ -2,7 +2,7 @@
     <footer>
         <div class="container">
         <div>
-            <img src="/img/logo.png" alt="logo">
+            <img src="/img/Logo.png" alt="logo">
         </div>
         <div>
             <ul>

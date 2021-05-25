@@ -113,7 +113,7 @@ export default {
       slideAvatarEl.classList.add('active')
       paginationEl.classList.add('active')
     
-    }, 1000 )
+    }, 4000 )
 
 
     const onChangeSlide = ( activeIndex ) => {
