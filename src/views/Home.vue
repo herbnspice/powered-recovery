@@ -4,14 +4,14 @@
         <main>
           <AboutSection />
           <ProgramSection />
-          <FitnessSection />
           <ReviewSection />
+          <FitnessSection />
           <BMISecton />
           <CalendarSection />
           <CoachSection />
           <GallerySection />
           <PricingSeciton />
-          <BookSecton />
+          <BookSecton showMe=""/>
         </main>
         <Footer/>
   </div>
@@ -29,6 +29,7 @@ import CoachSection from './sections/Home/coach'
 import GallerySection from './sections/Home/gallery'
 import PricingSeciton from './sections/Home/pricing'
 import BookSecton from './sections/Home/book'
+import { ref } from 'vue'
 
 export default {
   components: {
@@ -45,8 +46,9 @@ export default {
     PricingSeciton,
     BookSecton
   },
-  setup() {
-    
-  },
+  setup(){
+    const tru = ref(true)
+    return  { tru }
+  }
 }
 </script>
