@@ -35,27 +35,31 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
                 </div>
                 <div class="bmi-calculator-container">
                     <h3> Calculate your BMI</h3>
-                    <form action="#">
+                    <form action="#" @submit.prevent="onCalculateBMI">
                         <div class="form-group">
-                          <input type="number" name="height" id="height" placeholder="Height/cm" v-model="height">
+                          <input type="number" name="height" id="height" placeholder="Height/cm" v-model="height" required>
+                          <span class="error"> This is required </span>
                         </div>
                         <div class="form-group">
-                          <input type="number" name="weight" id="weight" placeholder="Weight/kg"  v-model="weight">
+                          <input type="number" name="weight" id="weight" placeholder="Weight/kg"  v-model="weight" required>
+                           <span class="error"> This is required </span>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
-                          <input type="number" name="age" id="age" placeholder="Age/kg" v-model="age">
+                          <input type="number" name="age" id="age" placeholder="Age/kg" v-model="age" required>
+                           <span class="error"> This is required </span>
                         </div>
                         <div class="form-group">
-                        <select name="gender" id="gender"  v-model="gender">
+                        <select name="gender" id="gender"  v-model="gender" required>
                             <option value="">What is your gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
+                         <span class="error"> This is required </span>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
-                          <select name="activity" id="activity" v-model="activity">
+                          <select name="activity" id="activity" v-model="activity" required>
                               <option value="">What is your activity factor?</option>
                               <option value="1.2">Little No Exercise / Sedentary Lifestyle / Desk Job </option>
                               <option value="1.375">Little Exercise 1 - 3 times a week </option>
@@ -63,6 +67,7 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
                               <option value="1.725">Hard Exercise everday or exercising 2x/day</option>
                               <option value="1.9">Hard exercise 2 or more times per day or training for marathon, or triathlon, etc. </option>
                           </select>
+                           <span class="error"> This is required </span>
                         </div>
                         <div class="break"></div>
                         <div class="form-group">
@@ -70,7 +75,20 @@ heart disease, high blood pressure,  type 2 diabetes, gallstones, breathing prob
                         </div>
                     </form>
                     <div class="calculate-status-container" v-if="bmi">
-                    <img src="/img/icons/obese.svg" alt="results">
+                    <img src="/img/icons/man-severe-obese.svg" alt="results" 
+                      v-show="weightGroup == 'Very Severely Obese'">
+                    <img src="/img/icons/man-obese.svg" alt="results" 
+                      v-show="
+                        weightGroup == 'Severely Obese' ||
+                        weightGroup == 'Overweight'">
+                    <img src="/img/icons/man-overweight.svg" alt="results" 
+                      v-show="weightGroup == 'Overweight'">
+                    <img src="/img/icons/man-normal.svg" alt="results" 
+                      v-show="weightGroup == 'Healthy'">
+                     <img src="/img/icons/man-underweight.svg" alt="results" 
+                      v-show="weightGroup == 'Underweight' ||
+                        weightGroup == 'Very Severely Underweight' || 
+                        weightGroup == 'Severely Underweight'">
                     <p> You are {{weightGroup }}</p>
                     <p> Your BMI is  <span>{{bmi}} </span> . BMR <span> {{bmr}} </span> cal/day, and BMR w/Activity Factor <span> {{activityModifier}} </span> cal/day</p>
                     </div>
@@ -96,7 +114,7 @@ export default {
     const gender = ref( '' )
     const weightGroup = ref(null)
     const activityModifier = ref(null)
-
+    const error = ref( null )
     const onCalculateBMI =() => {
         let m =  height.value / 100 
         if( weight.value > 0 && m > 0 ){
@@ -107,14 +125,41 @@ export default {
 
     }
 
-    const onCalculateBMR = () => {
-      if( gender.value == 'female'){
-        bmr.value = ( 655 + (9.6 *  weight.value ) + (1.8 * height.value ) - (4.7 * age.value ) ).toFixed(2)
-      } else {
-        bmr.value = ( 66 + (13.7 * weight.value ) + (5 *  height.value ) - (6.8 * age.value) ).toFixed(2)
-      }
+    const checkRequired = ( inputArray ) =>{
+      Object.keys( inputArray ).map( key => {
+        if( inputArray[key] === '' ||
+            inputArray[key] === null) {
+              let span = document.querySelector(`.form-group [name=${key}] + span`)
+            if( span ){
+              span.classList.add('show')
+              setTimeout( () => {
+                span.classList.remove('show')
+              }, 2000)
+            }
+           error.value = true
+        } else{
+          error.value = false
+        }
+      })
+    }
 
-        activityModifier.value  = ( activity.value * bmr.value ).toFixed(2)
+    const onCalculateBMR = () => {
+      
+      checkRequired({
+        gender: gender.value, 
+        weight: weight.value,
+        height: height.value,
+        age: age.value,
+        activity: activity.value
+      })
+      if(!error.value ){
+        if( gender.value == 'female'){
+          bmr.value = ( 655 + (9.6 *  weight.value ) + (1.8 * height.value ) - (4.7 * age.value ) ).toFixed(2)
+        } else {
+          bmr.value = ( 66 + (13.7 * weight.value ) + (5 *  height.value ) - (6.8 * age.value) ).toFixed(2)
+        }
+          activityModifier.value  = ( activity.value * bmr.value ).toFixed(2)
+      }
     }
     const getWeihtGroup = () =>{
        if (bmi.value == 0) {
@@ -138,7 +183,7 @@ export default {
             }
     }
 
-    return { bmi, bmr,  height, weight, age, activity, gender, weightGroup, activityModifier,  onCalculateBMI }
+    return { bmi, bmr,  height, weight, age, activity, gender, weightGroup, activityModifier,  onCalculateBMI, error }
   },
 }
 </script>

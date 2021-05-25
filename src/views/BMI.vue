@@ -1,21 +1,22 @@
 <template>
   <div class="home">
-        <Header />
+        <nav>
+             <img src="/img/Logo.png" alt="logo">
+        </nav>
         <main>
-          <AboutSection />
-          <ProgramSection />
-          <ReviewSection />
-          <FitnessSection />
           <BMISecton />
-          <CalendarSection />
-          <CoachSection />
-          <GallerySection />
-          <PricingSeciton />
-          <BookSecton showMe=""/>
         </main>
-        <Footer/>
   </div>
 </template>
+<style scoped>
+nav{
+        background: #000;
+    padding: 10px;
+}
+nav img{
+    width:200px
+}
+</style>
 <script>
 import BMISecton from './sections/Home/bmi'
 import { ref } from 'vue'

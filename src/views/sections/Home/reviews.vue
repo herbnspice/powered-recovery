@@ -94,7 +94,6 @@ export default {
       let activeIndexEl = activeEl.getAttribute('data-index');
 
 
-      console.log( activeIndexEl, reviews.value.length )
       if( activeIndexEl == reviews.value.length -1 ){
         activeIndexEl = 0
       } else {

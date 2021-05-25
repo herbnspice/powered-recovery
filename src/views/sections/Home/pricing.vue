@@ -59,7 +59,7 @@ to achieve your fitness goals!
                     <span class="price"> 800 </span>
                     <span class="per"> PER MONTH</span>
                 </h3>
-                <img src="/img/icons/Boxing.svg" alt="">
+                <img src="/img/icons/boxing.svg" alt="">
                 <p class="title"> Box in a the Box </p>
                 <p>
                     Aims to add longetivity to young 

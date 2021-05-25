@@ -26,7 +26,7 @@
                     </form>
                    
                 </div>
-                 <div class="status-container">
+                 <div class="status-container ">
                     <img src="/img/icons/strong-heart.svg" alt="">
                     <div class="status-text-container">
                         <h3>You have made a good decision! </h3>
@@ -65,7 +65,7 @@
     background-size: contain;
 }
 .status-container{
-    display: flex;
+    display: none; //flex
     flex-wrap: wrap;
     background: #fff;
     padding: 30px;
