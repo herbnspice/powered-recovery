@@ -1,5 +1,9 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "bc504545cadf5ccf9b208b44367f819c",
+    "url": "/android-chrome-192x192.png"
+  },
+  {
     "revision": "4408e6f5024ac649a2fd",
     "url": "/css/app.821a25f9.css"
   },
@@ -10,10 +14,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "16bafd8616bd346686923650c4b417bd",
     "url": "/img/Banner.jpg"
-  },
-  {
-    "revision": "13aeba218c31e8ba9b5afdf2bdd52d2b",
-    "url": "/img/Logo.png"
   },
   {
     "revision": "724cf068c555717da45e718dd5112853",
@@ -64,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/gino.png"
   },
   {
+    "revision": "13aeba218c31e8ba9b5afdf2bdd52d2b",
+    "url": "/img/logo.png"
+  },
+  {
     "revision": "363b04e7a5a28b3b7cb2557cad8d4ec3",
     "url": "/img/programs.jpg"
   },
@@ -92,7 +96,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/review/thekentan.jpg"
   },
   {
-    "revision": "87a63347069c2bb964227cd6c4292ce6",
+    "revision": "a77e09baa5ede6910ad824da1a1afb7f",
     "url": "/index.html"
   },
   {
