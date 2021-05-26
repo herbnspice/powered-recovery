@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.683e607e473b5a4b519e4a247182dc1b.js"
+  "/precache-manifest.22224491a79d82bd349daa70cbf81650.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "powered-recovery"});

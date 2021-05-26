@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc504545cadf5ccf9b208b44367f819c",
-    "url": "/android-chrome-192x192.png"
+    "revision": "de9baedca6e3dc4f3257",
+    "url": "/css/about.f66faa8f.css"
   },
   {
-    "revision": "4408e6f5024ac649a2fd",
-    "url": "/css/app.821a25f9.css"
+    "revision": "b3399f302ea3c5fbc068",
+    "url": "/css/app.d39fa6de.css"
   },
   {
     "revision": "986602f44131fb6937ecfa83802eef28",
@@ -18,6 +18,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "724cf068c555717da45e718dd5112853",
     "url": "/img/about.jpg"
+  },
+  {
+    "revision": "452ec119e93e3a1f4679e4c3c0632e47",
+    "url": "/img/bout-south.png"
   },
   {
     "revision": "849deab5d724648dc56ec6326f27c477",
@@ -68,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/logo.png"
   },
   {
+    "revision": "290028e1fd0fad03bc3d4d78ba99485d",
+    "url": "/img/love-fest.png"
+  },
+  {
     "revision": "363b04e7a5a28b3b7cb2557cad8d4ec3",
     "url": "/img/programs.jpg"
   },
@@ -96,20 +104,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/review/thekentan.jpg"
   },
   {
-    "revision": "a77e09baa5ede6910ad824da1a1afb7f",
+    "revision": "7b466293be564e1621187d8cbaf9b513",
     "url": "/index.html"
   },
   {
-    "revision": "8b5aeae5274a7be0b372",
-    "url": "/js/about.de5f75d6.js"
+    "revision": "de9baedca6e3dc4f3257",
+    "url": "/js/about.57bd37ca.js"
   },
   {
-    "revision": "4408e6f5024ac649a2fd",
-    "url": "/js/app.05fffa73.js"
+    "revision": "b3399f302ea3c5fbc068",
+    "url": "/js/app.5bd002ea.js"
   },
   {
-    "revision": "4197cdcb8a40960dc356",
-    "url": "/js/chunk-vendors.c31db8ce.js"
+    "revision": "d849d8de3c9be7e59693",
+    "url": "/js/chunk-vendors.bac81892.js"
   },
   {
     "revision": "d42b8b3ff866660597ed44e166007cdf",
@@ -118,5 +126,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
+  },
+  {
+    "revision": "053100cb84a50d2ae7f5492f7dd7f25e",
+    "url": "/site.webmanifest"
   }
 ]);
