@@ -19,11 +19,11 @@
                       <a :href="review.url" target="_blank">
                         <img :src="review.avatar" :alt="review.name" crossorigin="anonymous">
                         <p class="name"> {{ review.name }}</p>
-                        <p> {{ review.profession }}</p>
+                        <p > {{ review.profession }}</p>
                       </a>
                     </div>
                     <div class="carousel-item-content">
-                    <p> {{ review.review }} </p>
+                    <p @mousedown="clearSlideInteval"> {{ review.review }} </p>
                     </div>
                 </div>
             </div>
@@ -135,8 +135,11 @@ export default {
       slideAvatarEl.classList.add('active')
 
     }
+    const clearSlideInteval = () => {
+      clearInterval(setSlideInterval)
+    }
 
-    return { reviews,onChangeSlide}
+    return { reviews,onChangeSlide, clearSlideInteval}
   },
 }
 </script>
@@ -239,7 +242,7 @@ export default {
   font-size: 28px;
   text-align: left;
   position: relative;
-  padding:10px;
+  padding:50px;
   max-height: 185px;
   overflow: hidden;
 }
@@ -255,7 +258,7 @@ export default {
   position: absolute;
   width: 50px;
   content: " ";
-  top: -40px;
+  top: 0px;
   left: 0;
   background: url(/img/icons/qoutation.svg) no-repeat;
   background-size: contain;
@@ -307,16 +310,16 @@ export default {
     margin-bottom: 40px;
   }
   .carousel-item-content p{
-    padding: 20px;
+    padding: 30px;
     font-size: 20px;
   }
   .carousel-item-content p::before{
-      top: -20px;
+    top: 0px;
     left: 20px;
   }
    .carousel-item-content p::after{
-    right: 20px;
-    bottom: -20px;
+    right: 0px;
+    bottom: -15px;
   }
   .carousel-item-img a::after{
   left: 35%;

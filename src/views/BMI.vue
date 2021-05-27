@@ -1,7 +1,7 @@
 <template>
   <div class="home">
         <nav>
-             <img src="/img/Logo.png" alt="logo">
+             <img src="/img/logo.png" alt="logo">
         </nav>
         <main>
           <BMISecton />

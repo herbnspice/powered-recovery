@@ -3,7 +3,7 @@
 /* TYPOGRAPHY  */
 h2{
     font-weight:900;
-    color:#232323;
+    color: rgba(35, 35, 35, 0.5);
     font-size: 10rem;
     display: block;
     position: relative;
@@ -11,21 +11,21 @@ h2{
     text-transform: uppercase;
   }
   h2.light{
-      color:#f4f4f4;
+      color:rgba(244, 244, 244, 0.5);
   }
   h2.light::before{
       color: #232323;
   }
   
   h2.light-secondary{
-      color:#D37B2D;
+      color:rgba(211, 123, 45, .3);
   }
   h2.light-secondary::before{
       color: #f4f4f4;
   }
   
   h2.light-tertiary{
-      color: #ffff;
+      color: rgba(255,255,255, .5);
   } 
   h2.light-tertiary::before{
       color: #000;
@@ -53,14 +53,14 @@ h2{
   .sub-title{
       font-weight: 900;
       font-size: 2em;
-      width: 50%;
+      width: 100%;
       line-height: 57px;
-      margin: -88px 0px 20px 0px;
+      margin: -40px 0px 20px 0px;
       position: relative;
   }
  
   .sub-text {
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .text-xs{
@@ -71,7 +71,7 @@ h2{
   @include mobile{
     h2 {
         font-weight: 900;
-        color: #232323;
+        color: rgba(248, 218, 218, 0.5);
         font-size: 10rem;
         display: block;
         position: relative;
@@ -111,7 +111,7 @@ h2{
 
     .sub-title {
         width: 100%;
-        margin: 35px 0px 20px 0px;
+        margin: 25px 0px 20px 0px;
     }
 
   }
