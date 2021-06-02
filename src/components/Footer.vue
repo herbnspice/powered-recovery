@@ -42,6 +42,9 @@ footer div{
   }
   footer .container{
     flex-wrap:  wrap;
+        align-items: center;
+    align-content: flex-start;
+    justify-content: center;
   }
   footer .container div{
     flex-basis: 100%;
@@ -49,6 +52,12 @@ footer div{
     align-items: center;
     text-align: center;
   }
+  footer .container div {
+    align-items: center;
+    text-align: center;
+    justify-content:center
+  }
+
    footer .container div ul{
     width: 100%;
   }
