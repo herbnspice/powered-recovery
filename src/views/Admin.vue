@@ -1,0 +1,23 @@
+<template>
+    <div>
+        <aside>
+        <ul>
+            <li>
+                Dashboard
+            </li>
+            <li>
+                Users
+            </li>
+            <li>
+                Workout
+            </li>
+            <li>
+                Schedule
+            </li>
+        </ul>
+        </aside>
+        <section>
+
+        </section>
+    </div>
+</template>
